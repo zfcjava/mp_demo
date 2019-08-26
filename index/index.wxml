@@ -1,6 +1,14 @@
 <!-- 导航图片 -->
 <view class='slider'>
-  <image  src='https://image1.suning.cn/uimg/cms/img/156655260936496969.jpg?format=_is_1242w_610h'mode='asepctFill'></image>
+  <swiper autoplay='true' indicator-dots='true' duration='500'  interval='2500' circular='xx'>
+    <swiper-item>
+      <image src='https://image1.suning.cn/uimg/cms/img/156655260936496969.jpg?format=_is_1242w_610h' mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://image.suning.cn/uimg/aps/material/156653039054957982.jpg?format=_is_1242w_610h'
+      mode='aspectFill'></image>
+    </swiper-item>
+  </swiper>
 </view>
 <!-- nav -->
 <view class='index-nav'>
