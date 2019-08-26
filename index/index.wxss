@@ -7,6 +7,7 @@
 .index-nav {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .index-nav .nav-item{
@@ -18,18 +19,8 @@
   align-items: center;
   box-sizing: border-box;
   border-bottom: 1rpx solid #ccc;
-  position: relative;
 }
 
-.index-nav .nav-item::after{
-  content: '';
-  width: 1rpx;
-  height: 100px;
-  position: absolute;
-  top: 0rpx;
-  right: 0rpx;
-  background-color: #ccc;
-}
 
 .index-nav .nav-item:nth-child(3n)::after{
   width: 0rpx;
@@ -47,10 +38,10 @@
 }
 
 /* 首页入口 */
-
 .index-enter {
   display: flex;
-  padding: 20px 20px;
+  padding: 20prx 20rpx;
+  margin-top: 20rpx;
 }
 
 .index-enter .enter-item{
@@ -63,3 +54,4 @@
   width: 320rpx;
   height:178rpx;
 }
+
