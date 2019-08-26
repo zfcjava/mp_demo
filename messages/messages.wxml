@@ -3,5 +3,5 @@
   <text class='card-date'>2019-08-26</text>
   <image src='https://image.suning.cn/uimg/aps/material/156653039054957982.jpg?format=_is_1242w_610h' mode='aspectFill' class='card-image'></image>
   <text class='card-desc'>描述信息</text>
-  <text class='card-read'>详细信息</text>
+  <text class='card-read arrow'>详细信息</text>
 </view>
