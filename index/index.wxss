@@ -14,11 +14,28 @@
   flex-direction: column;
   width: 33.3333%;
   height: 200rpx;
-  border: 1px  solid #ccc;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  border-bottom: 1rpx solid #ccc;
+  position: relative;
 }
+
+.index-nav .nav-item::after{
+  content: '';
+  width: 1rpx;
+  height: 100px;
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  background-color: #ccc;
+}
+
+.index-nav .nav-item:nth-child(3n)::after{
+  width: 0rpx;
+}
+
+
 .nav-item image{
   width: 80rpx;
   height: 80rpx;
