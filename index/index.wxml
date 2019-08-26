@@ -1,6 +1,6 @@
 <!-- 导航图片 -->
 <view class='slider'>
-  <image  src='../assets/images/banner-01.png'></image>
+  <image  src='https://image1.suning.cn/uimg/cms/img/156655260936496969.jpg?format=_is_1242w_610h'mode='asepctFill'></image>
 </view>
 <!-- nav -->
 <view class='index-nav'>
@@ -40,5 +40,16 @@
   <navigator class='nav-item'>
     <image src='../assets/icons/grid-09.png'></image>
     <text>美食</text>
+  </navigator>
+</view>
+
+
+<!-- 首页入口 -->
+<view class='index-enter'>
+  <navigator class='enter-item'>
+    <image src='/pages/assets/images/link-01.png'></image>
+  </navigator>
+   <navigator class='enter-item'>
+    <image src='/pages/assets/images/link-02.png'></image>
   </navigator>
 </view>
