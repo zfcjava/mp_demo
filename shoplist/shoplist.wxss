@@ -1,1 +1,28 @@
-/* pages/shoplist/shoplist.wxss */
+.shop{
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+  display: flex;
+  position: relative;
+  font-size: 12px;
+}
+
+.shop-image image{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.shop-info{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+
+.shop-star{
+  position: absolute;
+  top: 20rpx;
+  right:20rpx;
+}
+
+.shop-title{
+  font-size: 16px;
+}

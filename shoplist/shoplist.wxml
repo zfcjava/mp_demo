@@ -1,2 +1,14 @@
-<!--pages/shoplist/shoplist.wxml-->
-<text>pages/shoplist/shoplist.wxml</text>
+<view class='shop'>
+  <view class='shop-image'>
+    <image src='https://imgservice.suning.cn/uimg1/b2c/image/wQ6z6cc__3KboOl79mhPjg.jpg_400w_400h_4e' mode='aspectFill'></image>
+  </view>
+  <view class='shop-info'>
+    <text class='shop-title'>商品名称:达利园蛋黄派</text>
+    <text class='shop-phone'>电话:123456</text>
+    <text class='shop-address'>地址:北京天安门</text>
+    <text class='shop-time'>时间:1959-10-01</text>
+  </view>
+   <view class='shop-star'>
+      ☆ ☆ ☆ ☆ ☆
+  </view>
+</view>
