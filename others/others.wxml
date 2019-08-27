@@ -1,2 +1,32 @@
-<!--pages/others/others.wxml-->
-<text>pages/others/others.wxml</text>
+<view class='menu-group'>
+  <navigator class='menu-item'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>你好</text>
+  </navigator>
+</view>
+<view class='divider'></view>
+<view class='menu-group'>
+  <navigator class='menu-item'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>你好</text>
+  </navigator>
+</view>
+<view class='divider'></view>
+<view class='menu-group'>
+  <navigator class='menu-item'>
+    <text>设置</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>版本更新</text>
+  </navigator>
+</view>
