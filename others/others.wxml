@@ -1,32 +1,39 @@
 <view class='menu-group'>
-  <navigator class='menu-item'>
-    <text>你好</text>
-  </navigator>
   <navigator class='menu-item arrow'>
-    <text>你好</text>
+    <text>表单</text>
+  </navigator>
+  <navigator class='menu-item'>
+    <input type='text' placeholder='text'></input>
+  </navigator>
+  <navigator class='menu-item'>
+    <input type='text' password placeholder='password'></input>
+  </navigator>
+  <navigator class='menu-item'>
+    <input type='digit' placeholder='digit'></input>
+  </navigator>
+  <navigator class='menu-item'>
+    <input type='idcard' placeholder='idcard'></input>
   </navigator>
 </view>
 <view class='divider'></view>
 <view class='menu-group'>
+  <navigator class='menu-item arrow'>
+    <text>其他表单</text>
+  </navigator>
   <navigator class='menu-item'>
-    <text>你好</text>
+    <checkbox-group bindchange='cbChanged' data-aa='222'>
+      <checkbox color='#f60' value='son' checked></checkbox> 呵呵
+      <checkbox color='#f60' value='mom'></checkbox> 妈妈
+      <checkbox color='#f60' value='dad'></checkbox>爸爸
+    </checkbox-group>
+  </navigator>
+  <navigator class='menu-item'>
+    <radio-group bindchange='rbChanged' data-index='1'>
+      <radio color='#f60' value='apple'>苹果</radio>
+      <radio color='#f60' value='pear'>梨</radio>
+    </radio-group>
   </navigator>
   <navigator class='menu-item arrow'>
     <text>你好</text>
-  </navigator>
-  <navigator class='menu-item'>
-    <text>你好</text>
-  </navigator>
-  <navigator class='menu-item arrow'>
-    <text>你好</text>
-  </navigator>
-</view>
-<view class='divider'></view>
-<view class='menu-group'>
-  <navigator class='menu-item'>
-    <text>设置</text>
-  </navigator>
-  <navigator class='menu-item arrow'>
-    <text>版本更新</text>
   </navigator>
 </view>

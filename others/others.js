@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  cbChanged(e){
+    console.log(e.detail.value + " : " + e.target.dataset.aa)
+  },
+  rbChanged(e){
+    console.log(e.detail.value + " : " + e.target.dataset.index)
   }
 })
