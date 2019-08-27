@@ -13,6 +13,9 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
+    wx.setNavigationBarTitle({
+      title: options.title,
+    })
     wx.request({
       url: 'https://locally.uieee.com/categories/'+ options.cat +'/shops',
       data:{_page:1,_limit:10},

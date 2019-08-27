@@ -8,7 +8,7 @@
 </view>
 <!-- nav -->
 <view class='index-nav'>
-  <navigator class='nav-item bdr' wx:for='{{navList}}' wx:key='id' url='/pages/shoplist/shoplist?cat={{item.id}}'>
+  <navigator class='nav-item bdr' wx:for='{{navList}}' wx:key='id' url='/pages/shoplist/shoplist?cat={{item.id}}&title={{item.name}}'>
     <image src='{{item.icon}}' lazy-load=''></image>
     <text>{{item.name}}</text>
   </navigator>
