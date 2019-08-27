@@ -5,14 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    shoplists:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'https://locally.uieee.com/categories/1/shops',
+      data:{_page:1,_limit:10},
+      success: (res) =>{
+        this.setData(
+          {
+            shoplists:res.data
+          }
+        )
+      }
+    })
   },
 
   /**
