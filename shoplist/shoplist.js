@@ -12,8 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options)
     wx.request({
-      url: 'https://locally.uieee.com/categories/1/shops',
+      url: 'https://locally.uieee.com/categories/'+ options.cat +'/shops',
       data:{_page:1,_limit:10},
       success: (res) =>{
         this.setData(
