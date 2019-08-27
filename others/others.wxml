@@ -37,3 +37,27 @@
     <text>你好</text>
   </navigator>
 </view>
+
+
+<!-- 微信脚本，提供给当前页面逻辑计算的方法 -->
+<wxs module='obj'>
+  var inSum = function(a, b) {
+    return a + b
+  }
+
+  module.exports.sum = inSum
+</wxs>
+
+<view>{{ obj.sum(1,2) }}</view>
+
+<wxs module='nba'>
+  module.exports = {
+    yaoming: function(){
+      return '姚明'
+    },
+    siji: function(){
+        return '银角大王'
+    }
+  }
+</wxs>
+<view> {{ nba.yaoming() +' : '+ nba.siji()}}</view>
