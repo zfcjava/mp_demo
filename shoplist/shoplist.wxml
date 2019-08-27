@@ -9,6 +9,11 @@
     <text class='shop-time'>时间:1959-10-01</text>
   </view>
    <view class='shop-star'>
-      ☆ ☆ ☆ ☆ ☆
+    <view class='star-after'>
+       ★★★★★
+    </view>
+     <view class='star-before'>
+       ★★★★★
+    </view>
   </view>
 </view>
