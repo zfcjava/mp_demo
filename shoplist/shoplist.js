@@ -1,11 +1,50 @@
 // pages/shoplist/shoplist.js
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    shoplists:[]
+    shoplists:[],
+    pageIndex:0,
+    pageSize:20,
+    catIndex:1,
+    hasMore:true
+  },
+
+  loadmore : function () {
+    //如果没有数据，则停止网络请求
+    if(!this.data.hasMore){
+      return;
+    }
+    this.data.pageIndex++ ,
+      wx.request({
+        url: 'https://locally.uieee.com/categories/' + this.data.catIndex + '/shops',
+        data: { _page: this.data.pageIndex, _limit: this.data.pageSize },
+        success: (res) => {
+          console.log(res.data.length)
+          var newList = this.data.shoplists.concat(res.data);
+          newList.concat(newList)
+
+          //检查是否仍有新的数据 X-Total-Count
+          console.log(res)
+          var totalCount = parseInt(res.header['X-Total-Count'])
+          var currentTotalCounts = this.data.pageSize * this.data.pageIndex;
+          var flag = true;
+          if(currentTotalCounts>=totalCount){
+              flag = false;
+          }
+          console.log('totalCount : ' + totalCount)
+          this.setData(
+            {
+              shoplists: newList,
+              hasMore:flag
+            }
+          )
+        }
+      })
   },
 
   /**
@@ -16,17 +55,8 @@ Page({
     wx.setNavigationBarTitle({
       title: options.title,
     })
-    wx.request({
-      url: 'https://locally.uieee.com/categories/'+ options.cat +'/shops',
-      data:{_page:1,_limit:10},
-      success: (res) =>{
-        this.setData(
-          {
-            shoplists:res.data
-          }
-        )
-      }
-    })
+
+    this.loadmore()
   },
 
   /**
@@ -68,7 +98,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    this.loadmore()
   },
 
   /**
