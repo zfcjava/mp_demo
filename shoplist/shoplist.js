@@ -43,6 +43,8 @@ Page({
               hasMore:flag
             }
           )
+
+          wx.stopPullDownRefresh()
         }
       })
   },
@@ -91,7 +93,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    //下拉刷新时，重置当前数据的状态
+    this.setData({
+      shoplists: [],
+      pageIndex: 0,
+      pageSize: 20,
+      hasMore: true
+    })
+    this.loadmore()
   },
 
   /**
