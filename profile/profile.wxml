@@ -1,3 +1,35 @@
 <view class='avatar center'>
   <image src='../assets/images/avatar.png' mode='aspectFill'></image>
 </view>
+<view class='menu-group'>
+  <navigator class='menu-item'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>你好</text>
+  </navigator>
+</view>
+<view class='divider'></view>
+<view class='menu-group'>
+  <navigator class='menu-item'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item'>
+    <text>你好</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>你好</text>
+  </navigator>
+</view>
+<view class='divider'></view>
+<view class='menu-group'>
+  <navigator class='menu-item'>
+    <text>设置</text>
+  </navigator>
+  <navigator class='menu-item arrow'>
+    <text>版本更新</text>
+  </navigator>
+</view>
