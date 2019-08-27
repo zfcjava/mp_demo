@@ -4,13 +4,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bannerList:[]
+    bannerList:[],
+    navList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    // 请求轮播图
     wx.request({
       //请求的url
       url: 'https://locally.uieee.com/slides',
@@ -21,6 +24,21 @@ Page({
       },
       fail: function(res) {},
       complete: function(res) {},
+    })
+
+    // 请求导航页面
+    wx.request({
+      //请求的url
+      url: 'https://locally.uieee.com/categories',
+      success: (res) => {
+        console.log(res.data)
+        
+        this.setData({
+          navList: res.data
+        })
+      },
+      fail: function (res) { },
+      complete: function (res) { },
     })
   },
 
