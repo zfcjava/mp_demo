@@ -33,9 +33,23 @@
       <radio color='#f60' value='pear'>梨</radio>
     </radio-group>
   </navigator>
-  <navigator class='menu-item arrow'>
-    <text>你好</text>
-  </navigator>
+</view>
+
+<view class='divider'></view>
+
+<view class='menu-group'>
+  <view class='menu-item arrow'>
+    <text>微信事件处理</text>
+  </view>
+  <view class='father' bindtap='fatherHandle'>
+    父亲
+    <view class='son' bindtap='sonHandle'>
+      儿子1
+    </view>
+    <view class='son2' catchtap='son2Handle'>
+      儿子2
+    </view>
+  </view>
 </view>
 
 
@@ -52,11 +66,11 @@
 
 <wxs module='nba'>
   module.exports = {
-    yaoming: function(){
+    yaoming: function() {
       return '姚明'
     },
-    siji: function(){
-        return '银角大王'
+    siji: function() {
+      return '银角大王'
     }
   }
 </wxs>

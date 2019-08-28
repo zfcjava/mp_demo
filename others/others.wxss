@@ -1,1 +1,17 @@
-/* pages/others/others.wxss */
+.father{
+  width: 300rpx;
+  height:300rpx;
+  background-color: skyblue;
+}
+
+.son{
+  width: 100rpx;
+  height:100rpx;
+  background-color: pink;
+}
+
+.son2 {
+  width: 100rpx;
+  height:100rpx;
+  background-color: green;
+}

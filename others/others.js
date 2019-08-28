@@ -68,5 +68,14 @@ Page({
   },
   rbChanged(e){
     console.log(e.detail.value + " : " + e.target.dataset.index)
+  },
+  fatherHandle(event){
+    console.log("父亲被点击了")
+  },
+  sonHandle(event){
+    console.log("儿子1被点击了")
+  },
+  son2Handle(event){
+    console.log("儿子2被点击了")
   }
 })
